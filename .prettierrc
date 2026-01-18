@@ -6,7 +6,5 @@
   "tabWidth": 2,
   "bracketSpacing": true,
   "arrowParens": "always",
-  "endOfLine": "lf",
-  // "editor.formatOnSave": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "endOfLine": "lf"
 }
