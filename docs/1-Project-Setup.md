@@ -1,6 +1,6 @@
-<!-- Creating react app -->
+<!-- Creating react TS app -->
 
-npm create vite@latest my-project --template react-ts
+npm create vite@latest [App-name] --template react-ts
 cd my-project
 npm install
 
@@ -10,14 +10,26 @@ npm install
 npm run dev
 
 <!-------------------------------------------------------------------------------- -->
-<!-- Ts config update for absolute paths [imports] -->
+<!-- Ts config update for absolute paths [imports]  tsconfig.app.json-->
 
-"compilerOptions": {
-"baseUrl": "src",
-"paths": {
-"@/_": ["_"]
-}
-}
+1- configure typescript
+inside compilerOptions object
+add the following
+
+<!-- "paths": {
+      "@/*": ["./src/*"]
+    } -->
+
+2- configure vite
+
+inside defineConfig
+add the following
+
+ <!-- resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  }, -->
 
 <!-------------------------------------------------------------------------------- -->
 <!-- ESLint & Prettier Setup -->
