@@ -1,13 +1,13 @@
 interface Props {}
 
-function Users(props: Props) {
+function Auth(props: Props) {
   const {} = props;
 
   return (
     <div>
-      <h1>Users Page</h1>
+      <h1>Auth Page</h1>
     </div>
   );
 }
 
-export default Users;
+export default Auth;
